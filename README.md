@@ -67,7 +67,7 @@ GOOGLE_API_KEY=your_google_api_key_here
 
 # Model Configuration
 EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
-LLM_MODEL=gemini-1.5-flash-latest
+LLM_MODEL=gemini-2.5-flash
 LLM_TEMPERATURE=0.3
 LLM_TOP_P=0.85
 
@@ -152,7 +152,7 @@ All configuration is managed through environment variables (see `.env` file):
 
 - **GOOGLE_API_KEY**: Your Google API key for Gemini LLM models (not needed for embeddings)
 - **EMBEDDING_MODEL**: SentenceTransformer model to use (default: `sentence-transformers/all-MiniLM-L6-v2`)
-- **LLM_MODEL**: Gemini model to use (e.g., `gemini-1.5-flash-latest`, `gemini-1.5-pro`)
+- **LLM_MODEL**: Gemini model to use (e.g., `gemini-2.5-flash`, `gemini-2.5-pro`)
 - **LLM_TEMPERATURE**: Temperature for LLM responses (0.0-1.0)
 - **LLM_TOP_P**: Top-p sampling parameter
 - **CHUNK_SIZE**: Size of document chunks (characters)
@@ -208,6 +208,18 @@ Make sure all dependencies are installed:
 ```bash
 pip install -r requirements.txt
 ```
+
+## Example Questions
+
+Here are some example questions you can ask the RAG chatbot:
+
+- What are the 3 secondary supports of life?
+- Reduced Therapy
+- How to deal with heart disease
+- What asanas should I do if I have imbalance in strength of my left and right arm?
+- How can I make my tea better?
+- Teach me in detail about dosas and how do I find mine?
+- I have a Vatta-Pita imbalance. Help me
 
 ## License
 
